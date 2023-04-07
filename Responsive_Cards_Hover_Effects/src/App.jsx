@@ -24,21 +24,23 @@ export default function App() {
       <div className="container">
         {cardProperty.map((idx) => {
           return (
-            <div className="card">
-              <div className="imgBx">
-                <img src={idx.img} />
+            <Card clr={idx.clr}>
+              <div className="card">
+                <div className="imgBx">
+                  <img src={idx.img} />
+                </div>
+                <div className="content">
+                  <h2>{idx.name}</h2>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+                    commodi officia aspernatur error. Veritatis quisquam rem
+                    quis ut, necessitatibus aut aperiam adipisci odio voluptatem
+                    quos totam esse sit dolorem incidunt?
+                  </p>
+                  <a href="#">Read More</a>
+                </div>
               </div>
-              <div className="content">
-                <h2>{idx.name}</h2>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-                  commodi officia aspernatur error. Veritatis quisquam rem quis
-                  ut, necessitatibus aut aperiam adipisci odio voluptatem quos
-                  totam esse sit dolorem incidunt?
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
+            </Card>
           );
         })}
       </div>
@@ -126,24 +128,25 @@ const Wrap = styled.div`
     height: 250px;
   }
 
-  .container .card .content h2 {
+  .container .card .content p {
+    color: #333;
+  }
+`;
+const Card = styled.div`
+  .card .content h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
     text-transform: capitalize;
-    color: var(--clr);
+    color: ${(props) => props.clr};
   }
 
-  .container .card .content p {
-    color: #333;
-  }
-
-  .container .card .content a {
+  .card .content a {
     position: relative;
     top: 40px;
     display: inline-block;
     padding: 12px 25px;
-    background-color: black;
+    background-color: ${(props) => props.clr};
     color: #fff;
     font-weight: 500;
     text-decoration: none;
