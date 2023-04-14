@@ -70,7 +70,7 @@ const Wrap = styled.div`
   background: #333;
 
   .calculator {
-    position: realte;
+    position: re;
     width: 300px;
   }
   .calculator .buttons {
