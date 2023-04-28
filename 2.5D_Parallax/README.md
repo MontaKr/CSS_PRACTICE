@@ -6,3 +6,6 @@
 
 JavaScript
 [https://codesandbox.io/s/2-5d-parallax-javascript-ix4f5q](https://codesandbox.io/s/2-5d-parallax-javascript-ix4f5q)
+
+React
+[https://codesandbox.io/s/2-5d-parallax-react-l9pdxp?file=/src/App.js](https://codesandbox.io/s/2-5d-parallax-react-l9pdxp?file=/src/App.js)
