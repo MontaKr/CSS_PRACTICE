@@ -104,7 +104,7 @@ const Style = styled.div`
     left: -40px;
     width: 40px;
     height: 100%;
-    background: #fff;
+    background: #fff; 
     transform-origin: right;
     transform: skewY(45deg);
     transition: 1.5s;
