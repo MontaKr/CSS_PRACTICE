@@ -1,8 +1,27 @@
 import React from "react";
-import styled from "styled-component";
+import { Wrap } from "./styles";
 
 const App = () => {
-  return <div>App</div>;
+  return (
+    <Wrap>
+      <div className="road">
+        <div className="taxi">
+          <div className="light_beam"></div>
+          <span>
+            <b></b>
+            <i></i>
+          </span>
+        </div>
+        <div className="taxi">
+          <div className="light_beam"></div>
+          <span>
+            <b></b>
+            <i></i>
+          </span>
+        </div>
+      </div>
+    </Wrap>
+  );
 };
 
 export default App;
