@@ -5,4 +5,4 @@
 ### CodeSandBox
 
 JavaScript : [https://codesandbox.io/s/line-stripes-animation-4vv9x3?file=/index.html](https://codesandbox.io/s/line-stripes-animation-4vv9x3?file=/index.html) \
-React : []()
+React : [https://codesandbox.io/s/line-stripes-animation-sn8gn6?file=/src/App.js](https://codesandbox.io/s/line-stripes-animation-sn8gn6?file=/src/App.js)
