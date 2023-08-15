@@ -6,14 +6,14 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family : "Poppins", sans-serif;
   }
 
   body {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     background: #181c1f;
   }
 `;
@@ -21,8 +21,8 @@ export const GlobalStyle = createGlobalStyle`
 export const Wrap = styled.div`
   .container {
     position: relative;
-    width: 100vw;
     height: 400px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -63,7 +63,7 @@ export const Text = styled.div`
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff;
   transform-origin: bottom;
-  animation: animate 2s linear forwards;
+  animation: animate linear forwards;
 
   left: ${(props) => props.left + "px"};
   font-size: ${(props) => 0.5 + props.size + "em"};

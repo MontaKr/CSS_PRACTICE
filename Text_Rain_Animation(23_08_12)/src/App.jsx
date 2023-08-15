@@ -5,16 +5,18 @@ const App = () => {
   const [rainTexts, setRainTexts] = useState([]);
 
   const randomText = () => {
-    const text = "abcdefghijklmnopqrstuvwxyz0123456789";
-    return text[Math.floor(Math.random() * text.length)];
+    let text = "abcdefghijklmnopqrstuvwxyz0123456789";
+    const letter = text[Math.floor(Math.random() * text.length)];
+    return letter;
   };
 
   useEffect(() => {
     const rain = () => {
-      const id = Date.now();
-      const left = Math.floor(Math.random() * 310);
-      const size = Math.random() * 1.5;
-      const duration = 1 + Math.random();
+      //instance
+      let id = Date.now();
+      let left = Math.floor(Math.random() * 310);
+      let size = Math.random() * 1.5;
+      let duration = 1 + Math.random();
 
       const newRainText = {
         id,
@@ -24,16 +26,22 @@ const App = () => {
         duration,
       };
 
+      //add newRainTexts to rainTexts
       setRainTexts((prevTexts) => [...prevTexts, newRainText]);
 
+      //get rid of texts every 2000ms
       setTimeout(() => {
         setRainTexts((prevTexts) => prevTexts.filter((text) => text.id !== id));
       }, 2000);
     };
 
-    const rainInterval = setInterval(rain, 200);
+    //create rain function every 100ms
+    const rainInterval = setInterval(rain, 100);
 
-    return () => clearInterval(rainInterval);
+    //useEffect Cleaner
+    return () => {
+      clearInterval(rainInterval);
+    };
   }, []);
 
   return (
@@ -42,18 +50,19 @@ const App = () => {
       <Wrap>
         <div className="container">
           <div className="cloud">
-            {rainTexts.map((text) => (
+            {rainTexts.map((rainVal) => (
               <Text
-                key={text.id}
-                left={text.left}
-                size={text.size}
-                duration={text.duration}
+                key={rainVal.id}
+                left={rainVal.left}
+                size={rainVal.size}
+                duration={rainVal.duration}
               >
-                {text.letter}
+                {rainVal.letter}
               </Text>
             ))}
           </div>
         </div>
+        <Text></Text>
       </Wrap>
     </>
   );
