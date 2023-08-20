@@ -5,7 +5,9 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Wrap></Wrap>
+      <Wrap>
+        <h1 data-text="Woonden Text typography">Woonden Text typography</h1>
+      </Wrap>
     </>
   );
 };
