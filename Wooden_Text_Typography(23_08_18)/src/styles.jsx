@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     background: url(${bg});
     background-size: cover;
     background-attachment: fixed;
-  }
+}
 `;
 
 export const Wrap = styled.div`
@@ -20,7 +20,7 @@ export const Wrap = styled.div`
     position: relative;
     margin: 0;
     padding: 0;
-    font-size: 9em;
+    font-size: 10em;
     text-transform: uppercase;
     text-align: center;
     background: url(${bg});
