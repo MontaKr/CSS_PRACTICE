@@ -2,10 +2,12 @@ import React, { useRef } from "react";
 import { GlobalStyle, Wrap } from "./styles";
 
 const App = () => {
+  //ref는 useEffect 밖에서 선언
   const ref1 = useRef(null);
   const ref2 = useRef(null);
 
   const mouseMoveFunc = (e, ref) => {
+    //리액트에서 e.offset 이 아닌 e.nativeEvent.offset으로 사용
     let x = e.nativeEvent.offsetX;
     let y = e.nativeEvent.offsetY;
     let cardWidth = ref.current.clientWidth;
@@ -28,6 +30,7 @@ const App = () => {
       <Wrap>
         <div className="container">
           <div
+            //e를 변수로 넘겨주면서 onMouseMove의 기본 메소드를 사용 가능
             onMouseMove={(e) => {
               mouseMoveFunc(e, ref1);
             }}
