@@ -1,6 +1,6 @@
 # Amazing_Gallery_Hover_Effect
 
-![ezgif-4-11dbdb2e11](https://github.com/MontaKr/CSS_Practice/assets/115155803/31f5f10f-212a-4c8a-9ff0-3aba9a948d5a)
+![ezgif-4-cf628f9bb7](https://github.com/MontaKr/CSS_Practice/assets/115155803/7f24edeb-ff8b-436a-82cd-2fead33f83de)
 
 ### CodeSandBox
 
