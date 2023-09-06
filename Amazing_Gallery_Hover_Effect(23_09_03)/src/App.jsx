@@ -7,7 +7,7 @@ import img4 from "./img4.jpg";
 import img5 from "./img5.jpg";
 
 const App = () => {
-  const [hoveredBox, setHoveredBox] = useState(null);
+  const [isHovered, setIsHovered] = useState(null);
 
   const box = [
     { name: "one", url: img1, text: "Spider Man" },
@@ -20,16 +20,20 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Wrap hovered={hoveredBox}>
+      <Wrap name={isHovered}>
         <div className="container">
           {box.map((val, idx) => {
             return (
               <Box
-                onMouseEnter={() => setHoveredBox(val.name)}
-                onMouseLeave={() => setHoveredBox(null)}
+                onMouseEnter={() => {
+                  setIsHovered(val.name);
+                }}
+                onMouseLeave={() => {
+                  setIsHovered(null);
+                }}
                 img={val.url}
-                name={val.text}
                 key={idx}
+                text={val.text}
               ></Box>
             );
           })}

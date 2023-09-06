@@ -22,8 +22,8 @@ export const GlobalStyle = createGlobalStyle`
 export const Box = styled.div`
   position: relative;
   background: url(${(props) => props.img});
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   transition: 0.25s;
   display: flex;
   justify-content: center;
@@ -33,14 +33,22 @@ export const Box = styled.div`
   &::before {
     content: "";
     position: absolute;
-    width: 100%;
     top: -1px;
+    width: 100%;
     height: calc(100% + 2px);
     background: linear-gradient(#000, transparent, transparent, #000);
   }
 
+  &:nth-child(even) {
+    transform: translateY(30px);
+  }
+
+  &:nth-child(odd) {
+    transform: translateY(-30px);
+  }
+
   &::after {
-    content: "${(props) => props.name}";
+    content: "${(props) => props.text}";
     position: absolute;
     bottom: -100px;
     background: #fff;
@@ -54,21 +62,7 @@ export const Box = styled.div`
     letter-spacing: 0.5em;
     opacity: 0;
     transition-delay: 0s;
-    -webkit-box-reflect: below 2px linear-gradient(transparentm #0003);
-  }
-
-  &:nth-child(even) {
-    transform: translateY(30px);
-  }
-
-  &:nth-child(odd) {
-    transform: translateY(-30px);
-  }
-
-  &:hover::after {
-    opacity: 1;
-    bottom: -60px;
-    transition-delay: 0.25s;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #0003);
   }
 `;
 
@@ -84,7 +78,7 @@ export const Wrap = styled.div`
     transition: 0.25s;
 
     grid-template-columns: ${(props) => {
-      switch (props.hovered) {
+      switch (props.name) {
         case "one":
           return "2fr 0.5fr 0.5fr 0.5fr 0.5fr";
         case "two":
@@ -95,8 +89,6 @@ export const Wrap = styled.div`
           return "0.5fr 0.5fr 0.5fr 2fr 0.5fr";
         case "five":
           return "0.5fr 0.5fr 0.5fr 0.5fr 2fr";
-        default:
-          return "1fr 1fr 1fr 1fr 1fr";
       }
     }};
 
@@ -106,6 +98,12 @@ export const Wrap = styled.div`
 
     ${Box}:hover {
       filter: grayscale(0) brightness(1.25);
+
+      &::after {
+        opacity: 1;
+        bottom: -60px;
+        transition-delay: 0.25s;
+      }
     }
   }
 `;
