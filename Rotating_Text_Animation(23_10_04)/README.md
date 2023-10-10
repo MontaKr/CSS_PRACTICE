@@ -5,4 +5,4 @@
 ### CodeSandBox
 
 JavaScript : [https://codesandbox.io/s/rotating-text-animation-tyyfqx?file=/index.html](https://codesandbox.io/s/rotating-text-animation-tyyfqx?file=/index.html) \
-React : []()
+React : [https://codesandbox.io/s/rotating-text-animation-4gd3g6?file=/src/App.js](https://codesandbox.io/s/rotating-text-animation-4gd3g6?file=/src/App.js)
