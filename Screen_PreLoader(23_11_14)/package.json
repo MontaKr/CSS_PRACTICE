@@ -1,5 +1,5 @@
 {
-  "name": "stunning-scroll-animation-23-11-06-",
+  "name": "screen-preloader-23-11-14-",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gsap": "^3.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^6.1.0",
+    "styled-components": "^6.1.1",
     "styled-reset": "^4.5.1"
   },
   "devDependencies": {
