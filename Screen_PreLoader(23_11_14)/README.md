@@ -5,4 +5,5 @@
 ### CodeSandBox
 
 JavaScript : [https://codesandbox.io/s/screen-preloader-mnxwj6](https://codesandbox.io/s/screen-preloader-mnxwj6) \
-React : []()
+React 1 : [https://codesandbox.io/s/screen-preloader-1-n624rq](https://codesandbox.io/s/screen-preloader-1-n624rq) \
+React 2 : [https://codesandbox.io/s/screen-preloader-2-vzrwq6](https://codesandbox.io/s/screen-preloader-2-vzrwq6)
