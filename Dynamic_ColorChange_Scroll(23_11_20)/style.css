@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  font-family: system-ui;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+section {
+  padding-block: 3rem;
+}
+
+section:nth-child(even) {
+  background: #fff;
+  color: #323232;
+}
+
+section:nth-child(odd) {
+  background-color: #000;
+  color: #efefef;
+}
+
+.wrapper {
+  width: min(100% - 3rem, 65ch);
+  margin-inline: auto;
+}
+
+.logo {
+  color: #fff;
+  width: 7rem;
+  margin: 1rem;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+@media (width > 980px) {
+  .logo {
+    position: sticky;
+    top: 0.5rem;
+    mix-blend-mode: difference;
+  }
+}
