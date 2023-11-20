@@ -12,7 +12,7 @@ export const Wrap = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: ${(props) => (props.isComplete ? "#039af4" : "#eee")};
+  background-color: ${(props) => (props.isLoaded ? "#039af4" : "#eee")};
   transition: 0.5s;
   transition-delay: 0ms.5s;
 
@@ -24,18 +24,18 @@ export const Wrap = styled.div`
     box-shadow: inset 0 10px 5px rgba(0, 0, 0, 0.075),
       0 15px 8px rgba(0, 0, 0, 0.05), 0 10px 15px rgba(0, 0, 0, 0.05),
       inset 0 -10px 15px rgba(255, 255, 255, 0.9);
-    transition: 0.5s;
+    transition: 0ms.5s;
 
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
-      left: 50%;
-      transform: translateX(-50%);
-      border-radius: 20px;
       width: 95%;
       height: 5px;
       background-color: #fff4;
+      top: 8px;
+      left: 50%;
+      border-radius: 20px;
+      transform: translateX(-50%);
     }
 
     .percentBar {
@@ -69,8 +69,7 @@ export const Wrap = styled.div`
     font-size: 4em;
     text-transform: uppercase;
     letter-spacing: 0.5em;
-    transition: 0.5s;
-    transition-delay: 1s;
+    transition: 0ms.5s;
     color: #fff;
   }
 `;
