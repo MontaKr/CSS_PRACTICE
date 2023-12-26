@@ -6,6 +6,14 @@ const App = () => {
     <>
       <GlobalStyle/>
       <Wrap>
+        <div className="container">
+          <div className="preloader">
+            <span/>
+            <span/>
+            <span/>
+          </div>
+          <div className="shadow"/>
+        </div>
       </Wrap>
     </>
   )
