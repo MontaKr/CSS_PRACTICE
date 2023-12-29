@@ -4,8 +4,6 @@
 
 ### CodeSandBox 
 JavaScript : [https://codesandbox.io/s/user-account-dropdown-cqhm9c](https://codesandbox.io/s/user-account-dropdown-cqhm9c) \
-<<<<<<< HEAD
-React : []()
-=======
-React : []()
->>>>>>> 59cbfa108d599d2b35ea1219960ca02fc05517d8
+
+React : [https://codesandbox.io/s/user-account-dropdown-98vv9n?resolutionWidth=1400&resolutionHeight=800](https://codesandbox.io/s/user-account-dropdown-98vv9n?resolutionWidth=1400&resolutionHeight=800)
+
