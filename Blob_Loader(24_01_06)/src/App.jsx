@@ -6,7 +6,7 @@ const App = () => {
     <>
       <GlobalStyle/>
       <Wrap>
-        <div className="loader"></div>
+        <div className="loader" />
       </Wrap>
     </>
     
