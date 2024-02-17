@@ -1,6 +1,6 @@
 # Video_In_Text
 
-![ezgif-5-8f4b4f2c78](https://github.com/MontaKr/CSS_Practice/assets/115155803/daaa30d5-a5fb-48a7-b72a-849ec5189a36)
+![ezgif-5-05b91f0bf8](https://github.com/MontaKr/CSS_Practice/assets/115155803/3f3ecfe1-6c71-41e6-bd46-954495f97057)
 
 ### CodeSandBox
 
