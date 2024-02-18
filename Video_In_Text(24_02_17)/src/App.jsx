@@ -1,15 +1,17 @@
-import React from 'react'
-import { GlobalStyle, Wrap } from './styles'
+import React from "react";
+import { GlobalStyle, Wrap } from "./styles";
 
 const App = () => {
   return (
     <>
-      <GlobalStyle/>
+      <GlobalStyle />
       <Wrap>
-        
+        <div>
+          <h1>Hello World</h1>
+        </div>
       </Wrap>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
