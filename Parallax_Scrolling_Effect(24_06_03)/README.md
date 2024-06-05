@@ -14,7 +14,7 @@
 ### CodeSandBox
 
 JavaScript : []() \
-React : []()
+React : [https://codesandbox.io/p/sandbox/parallax-scrolling-effect-nz6lws?file=%2Fsrc%2FApp.js%3A49%2C33](https://codesandbox.io/p/sandbox/parallax-scrolling-effect-nz6lws?file=%2Fsrc%2FApp.js%3A49%2C33)
 
 ---
 
