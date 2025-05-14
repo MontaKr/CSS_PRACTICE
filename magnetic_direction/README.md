@@ -13,9 +13,9 @@
 
 
 ### Stackblitz
-React : [https://stackblitz.com/edit/stackblitz-starters-jphvrthk?description=The%20React%20framework%20for%20production&file=app%2Fglobals.css,app%2Fpage.tsx&title=Next.js%20Starter](https://stackblitz.com/edit/stackblitz-starters-jphvrthk?description=The%20React%20framework%20for%20production&file=app%2Fglobals.css,app%2Fpage.tsx&title=Next.js%20Starter)
+React Version1 : [https://stackblitz.com/edit/stackblitz-starters-jphvrthk](https://stackblitz.com/edit/stackblitz-starters-jphvrthk)
 
-React2 : [https://stackblitz.com/edit/stackblitz-starters-pcnpxy4q](https://stackblitz.com/edit/stackblitz-starters-pcnpxy4q)
+React Version2 : [https://stackblitz.com/edit/stackblitz-starters-pcnpxy4q](https://stackblitz.com/edit/stackblitz-starters-pcnpxy4q)
 
 ---
 
