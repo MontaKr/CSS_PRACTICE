@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-dark: oklch(0 0 0);
+  --color-light: oklch(0.96 0.03 85);
+  --color-light2: oklch(0.94 0.02 75);
+  --color-accent1: oklch(0.88 0.08 290);
+  --color-accent2: oklch(0.88 0.12 320);
+  --color-accent3: oklch(0.88 0.06 85);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: "DM Sans";
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+span {
+  text-transform: uppercase;
+  font-family: "DM Mono";
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  padding: 2rem;
+  overflow: hidden;
+}

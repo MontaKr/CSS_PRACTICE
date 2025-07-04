@@ -20,14 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
     start: "top top",
     end: "75% top",
     scrub: 1,
+    // markers: true,
     onUpdate: (self) => {
-      const progress = self.progress;
+      const progress = self.progress; // 0~1
 
       const heroCardsContainerOpacity = gsap.utils.interpolate(
         1,
         0.5,
-        smoothStep(progress)
+        smoothStep(progress) // 0~1
       );
+
       gsap.set(".hero-cards", {
         opacity: heroCardsContainerOpacity,
       });
@@ -45,15 +47,17 @@ document.addEventListener("DOMContentLoaded", () => {
             "0%",
             "350%",
             smoothStep(cardProgress)
-          );
+          ); // 0%~350%
+
           const scale = gsap.utils.interpolate(
             1,
             0.75,
             smoothStep(cardProgress)
-          );
+          ); // 1~0.75
 
           let x = "0%";
           let rotation = 0;
+
           if (index === 0) {
             x = gsap.utils.interpolate("0%", "90%", smoothStep(cardProgress));
             rotation = gsap.utils.interpolate(0, -15, smoothStep(cardProgress));
@@ -79,12 +83,15 @@ document.addEventListener("DOMContentLoaded", () => {
     end: `+=${window.innerHeight * 4}px`,
     pin: ".services",
     pinSpacing: true,
+    // markers: true,
   });
 
   ScrollTrigger.create({
     trigger: ".services",
     start: "top top",
     end: `+=${window.innerHeight * 4}px`,
+
+    // Make .cards section remain after scrollTrigger ends
     onLeave: () => {
       const sevicesSection = document.querySelector(".services");
       const servicesRect = sevicesSection.getBoundingClientRect();
@@ -99,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
 
+    // Reset .cards Css when scroll reenters
     onEnterBack: () => {
       gsap.set(".cards", {
         position: "fixed",
@@ -119,11 +127,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const progress = self.progress;
 
       const headerProgress = gsap.utils.clamp(0, 1, progress / 0.9);
+
       const headerY = gsap.utils.interpolate(
         "400%",
         "0%",
         smoothStep(headerProgress)
       );
+
       gsap.set(".services-header", {
         y: headerY,
       });
