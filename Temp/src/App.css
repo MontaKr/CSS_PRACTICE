@@ -16,43 +16,61 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  body {
+    font-family: "DM Sans";
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-family: "DM Mono";
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  nav {
+    position: fixed;
+    width: 100vw;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+
+  section {
+    position: relative;
+    width: 100vw;
+    height: 100svh;
+    padding: 2rem;
+    overflow: hidden;
+  }
 }
 
-body {
-  font-family: "DM Sans";
+@keyframes floating {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    transform: translate(-50%, -55%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
 }
 
-h1 {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-p {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-span {
-  text-transform: uppercase;
-  font-family: "DM Mono";
-  font-size: 0.75rem;
-  font-weight: 500;
-}
-
-nav {
-  position: fixed;
-  width: 100vw;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 2;
-}
-
-section {
-  position: relative;
-  width: 100vw;
-  height: 100svh;
-  padding: 2rem;
-  overflow: hidden;
+.animate-floating {
+  animation: floating 2s infinite ease-in-out;
 }
