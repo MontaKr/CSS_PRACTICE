@@ -1,4 +1,6 @@
-const HeroCard = ({ card, index }) => {
+import { forwardRef } from "react";
+
+const HeroCard = forwardRef(({ card, index }, ref) => {
   const backgroundClasses = [
     "bg-accent1 origin-top-right z-20",
     "bg-accent2 z-10",
@@ -7,6 +9,7 @@ const HeroCard = ({ card, index }) => {
 
   return (
     <div
+      ref={ref}
       className={`card flex-1 relative aspect-[5/7] p-[0.75rem] rounded-[0.5rem] flex flex-col justify-between ${
         backgroundClasses[index] || ""
       }`}
@@ -21,6 +24,6 @@ const HeroCard = ({ card, index }) => {
       </div>
     </div>
   );
-};
+});
 
 export default HeroCard;

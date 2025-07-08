@@ -8,6 +8,8 @@
   --color-accent1: oklch(0.88 0.08 290);
   --color-accent2: oklch(0.88 0.12 320);
   --color-accent3: oklch(0.88 0.06 85);
+
+  --breakpoint-bk: 1024px;
 }
 
 @layer base {
